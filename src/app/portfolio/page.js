@@ -16,7 +16,7 @@ export default function Portfolio() {
         <h2>Software Engineer</h2>
       </Grid>
       <Grid md={10}></Grid>
-      <Grid container item xs={12} md={7}>
+      <Grid container item xs={12} md={7} p={{xs: '0 3rem', md: '0 6rem'}}>
         {projects.map(p => (
           <Container key={p.id} className={styles.card} >
             <Typography className={styles.card_h2} variant='h5'>{p.name}</Typography>
