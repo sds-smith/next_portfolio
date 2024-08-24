@@ -4,18 +4,7 @@ import styles from "./page.module.css";
 export default function Contact() {
     return (
         <div className={styles.grid}>
-          <a
-            href="https://github.com/sds-smith"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Github <span>-&gt;</span>
-            </h2>
-            <p>github.com/sds-smith</p>
-          </a>
-
+          
           <a
             href="https://www.linkedin.com/in/sds-smith/"
             className={styles.card}
@@ -26,6 +15,18 @@ export default function Contact() {
               LinkedIn <span>-&gt;</span>
             </h2>
             <p>linkedin.com/in/sds-smith</p>
+          </a>
+          
+          <a
+            href="https://github.com/sds-smith"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Github <span>-&gt;</span>
+            </h2>
+            <p>github.com/sds-smith</p>
           </a>
 
           <a
