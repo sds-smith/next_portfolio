@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 
 export default function Portfolio() {
   return (
-    <Grid container component="main" p={{xs: '3rem', md: '6rem'}} sx={{minHeight: '100vh', justifyContent: 'flex-start'}} >
+    <Grid container component="main" p={{xs: '3rem 0', md: '6rem 0'}} sx={{minHeight: '100vh'}} >
       <Header />
       <Grid item xs={12} md={2} textAlign="center">
         <h1>Shawn Smith</h1>
