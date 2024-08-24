@@ -14,7 +14,7 @@ export default function About() {
         <h2>Software Engineer</h2>
       </Grid>
       <Grid md={10}></Grid>
-      <Grid container item xs={12} md={7} p={{xs: '0 3rem', md: '0'}}>
+      <Grid container item xs={12} md={7} p={{xs: '0 3rem', md: '0 6rem'}}>
          { sections.map(section => (
            <Section
              key={section.title}
