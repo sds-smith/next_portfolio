@@ -41,6 +41,16 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+.header {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
