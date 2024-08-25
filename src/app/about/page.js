@@ -10,7 +10,7 @@ export default function About() {
   return (
     <GridComponentMain page='about' >
       <Signature page='about' />
-      <Grid container item xs={12} md={7} p={{xs: '0 3rem', md: '0 6rem'}}>
+      <Grid container item xs={12} md={7} p={{xs: '0 3rem 3rem 3rem', md: '0 6rem'}}>
          { sections.map(section => (
            <Section
              key={section.title}
