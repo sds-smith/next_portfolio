@@ -1,16 +1,16 @@
 
 import Grid from "@mui/material/Grid";
-import Header from "./header";
-import Center from "./center";
+import GridComponentMain from "./GridComponentMain";
+import Signature from "./Signature";
 import Contact from "./contact";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <Grid container component="main" className={styles.main}>
-      <Header />
-      <Center />
+    <GridComponentMain page='home' >
+      <Grid item xs={12}></Grid>
+      <Signature page='home' />
+      <Grid item xs={12}></Grid>
       <Contact />
-    </Grid>
+    </GridComponentMain>
   );
 }

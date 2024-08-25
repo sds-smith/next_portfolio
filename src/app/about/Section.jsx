@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 
 export default function Section({section}) {
   return (
