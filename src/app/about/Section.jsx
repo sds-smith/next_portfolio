@@ -5,7 +5,7 @@ import styles from "../page.module.css";
 
 export default function Section({section}) {
   return (
-    <Container className={styles.section} >
+    <Container component='section' className={styles.section} >
      <Typography className={styles.section_title} variant='h5'>{section.title}</Typography>
      {section.copy.map(p => <Typography className={styles.section_paragraph} key={p}>{p}</Typography>)}
     </Container>
