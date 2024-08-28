@@ -31,7 +31,7 @@ export default function BlogPage({ params }) {
 
     return (
       <Grid container component="main" p={{xs: '3rem 0', md: '6rem 0'}} sx={{minHeight: '100vh'}} >
-          <Grid item xs={12} component="article">
+          <Grid container item xs={12} component="article">
             <Markdown>{post.content}</Markdown>
           </Grid>
       </Grid>
