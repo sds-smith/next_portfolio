@@ -189,4 +189,6 @@ date: "August 28, 2024"
 
 <p>Notice that we are able to name our three State items as we choose when destructuring. This is the exact reason that we return them in this way vs as an Object. This helps with readability and reusability, helping to keep our code concise and tidy.</p>  
 
+<p>You can see it in action [here on codesandbox]('https://codesandbox.io/p/sandbox/usefetch-p7c3h6?file=%2Fsrc%2FApp.js%3A15%2C1). Note that I'm calling the hook `useFetch` and the util function `mockFetch`; they were changed to `useSharePoint` and `getSharePointData` for narrative purposes here in the blog post. `mockFetch` simulates an asyncronous operation with a three-second `setTimeout()`. </p>  
+
 <p>I hope this has demonstrated the value of using custom hooks, which is equal to but unique from the value of using util functions. Next time we will explore a few examples of custom hooks for managing state-like values in the url and local storage, hooks that expose a `[value, setValue]` tuple which will be familiar to anyone who has used the `useState` hook.</p>  
