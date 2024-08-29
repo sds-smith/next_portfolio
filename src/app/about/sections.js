@@ -16,7 +16,7 @@ const copy2 = [
 const copy3 = [
   "Software development is Act II of my career journey.", 
   "Act I was a dynamic and fulfilling career in the Food and Hospitality industry. Serving in leadership roles of progressively increasing scopes of influence and responsibility, I spent my final ten years overseeing an organization of six locations, 26 managers, and more than 300 front-line team members. This was a people role in a people business. ",
-  "Software, too, is a people business. Software is for people -- the people who use it, and the people who develop and maintain it. I believe the skills and qualities of character that make a successful leader in the restaurant world are infinitely transferrable; skills like partnering, mentoring, and listening; and qualities like humility, vision, and empathy."
+  "Software, too, is a people business. Software is for people -- the people who use it, and the people who develop and maintain it. I believe the skills and qualities of character that make a successful leader in the restaurant world are universally transferrable; skills like partnering, mentoring, and listening; and qualities like humility, vision, and empathy."
 ]
 
 export const sections = [
