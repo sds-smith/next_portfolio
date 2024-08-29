@@ -18,7 +18,7 @@ date: "August 28, 2024"
 
 <p>This is a great use case for a custom hook to encapsulate all that logic around loading and error states and expose it for re-use.</p>  
 
-<p>I first became aware of this pattern thanks to the `ApolloClient` library, which exports several hooks for querying GraphQL data. Front and center is `useQuery()`, which returns a `[ loading, error, data ]` tuple when invoked. My current project, another React application hosted in a Sharepoint environment, but one which I am creating from scratch and over which I have much more technical decision influence, seemed the perfect opportunity to develop something similar of my own. I've since become aware that this may be a fairly common pattern. Other libraries, like `react-query` or `tanstack-query` offer this functionality with additional features like validation, but it's easy enough to develop our own custom hook, and doing so may reduce our dependency overhead a bit.</p>  
+<p>I first became aware of this pattern thanks to the `ApolloClient` library, which exports several hooks for querying GraphQL data. Front and center is `useQuery()`, which returns a `[ loading, error, data ]` tuple when invoked. My current project, another React application hosted in a Sharepoint environment, but one which I am creating from scratch and over which I have much more technical decision-making influence, seemed the perfect opportunity to develop something similar of my own. I've since become aware that this may be a fairly common pattern. Other libraries, like `react-query` or `tanstack-query` offer this functionality -- along with additional features like validation -- but it's easy enough to develop our own custom hook, and doing so may reduce our dependency overhead a bit.</p>  
 
 <p>Let's look at some code:</p>  
 <p></p>  
@@ -89,7 +89,7 @@ date: "August 28, 2024"
 
 <p></p>  
 
-<p>The first thing you may notice is that `useSharePointData` looks nearly identical to the original App Component. We've moved all of the State handling and the entire `useEffect` hook into our custom hook, and we're just returning the state values instead of JSX. This should dramatically simplify our App Component, but more than that, we will now only call `useState` and define this `useEffect` hook once, no matter how many times we query Sharepoint. Let's take a look at our transformed App.js:</p>  
+<p>The first thing you may notice is that `useSharePointData` looks nearly identical to the original App Component. We've moved all of the State handling and the entire `useEffect` hook into our custom hook, and we're just returning the state values instead of JSX. This should dramatically simplify our App Component, but more than that, we will now only call `useState` and define this `useEffect` hook once in our code, no matter how many times we query Sharepoint. Let's take a look at our transformed App.js:</p>  
 
 <p></p>  
 
@@ -112,7 +112,7 @@ date: "August 28, 2024"
 
 <p></p>  
 
-<p>App.js is now much more concise and much easier to read. The best part is that any developer on the project can use this hook and -- by simply passing in the right query string -- can make an asyncronous fetch request and have access to a loading, error, and data state without having to deal with Promises, or async/ await keywords, request headers, bodies, etc.</p>  
+<p>App.js is now much more concise and much easier to read. The best part is that any developer on the project can use this hook and -- by simply passing in the right query string -- can make an asyncronous fetch request and have access to a loading, error, and data state without having to deal with Promises, or async/ await keywords, request headers, request bodies, etc.</p>  
 
 <p>One caveat, however, is that this hook will send the request immediately once invoked . . . in other words, as soon as the calling Component is mounted. Sometimes, we don't want this behavior. Sometimes we may need to send the request upon and based on a user event, or maybe we need to wait for some other asyncronous operation to complete before we send the request. The hook in the above example is no good for any of these use cases.</p>  
 
@@ -149,7 +149,7 @@ date: "August 28, 2024"
 
 <p></p>  
 
-<p>In `useLazySharePoint()`, we move all of the logic out of the useEffect hook, into a new function (`get`) which is not called but instead returned from our hook. We now return an Object containing the `get()` function and a `results` property which exposes our tuple. </p>  
+<p>In `useLazySharePoint()`, we move all of the logic out of the useEffect hook, into a new function (`get`) which is not called but instead returned from our hook. We now return an Object containing the `get` function and a `results` property which exposes our tuple. </p>  
 
 <p>Back in our App Component, we can use this in several ways. One example would be as a sort of Promise chain, where we call `get()` only after our original request is fulfilled:</p>  
 
@@ -187,8 +187,8 @@ date: "August 28, 2024"
 
 <p></p>  
 
-<p>Notice that we are able to name our three State items as we choose when destructuring. This is the exact reason that we return them in this way vs as an Object. This helps with readability and reusability, helping to keep our code concise and tidy.</p>  
+<p>Notice that we are able to name our three State values as we choose when destructuring. This is the exact reason that we return them in this way vs as an Object. This helps with readability and reusability, helping to keep our code concise and tidy.</p>  
 
-<p>You can see it in action ***[here on codesandbox](https://codesandbox.io/p/sandbox/usefetch-p7c3h6?file=%2Fsrc%2FApp.js%3A15%2C1)***. Note that I'm calling the hook `useFetch` and the util function `mockFetch`; they were changed to `useSharePoint` and `getSharePointData` for narrative purposes here in the blog post. `mockFetch` simulates an asyncronous operation with a three-second `setTimeout()`. </p>  
+<p>You can see it in action ***[here on codesandbox](https://codesandbox.io/p/sandbox/usefetch-p7c3h6?file=%2Fsrc%2FApp.js%3A15%2C1)***. Note that I've named the hook `useFetch` and the util function `mockFetch`; they were changed to `useSharePoint` and `getSharePointData` for narrative purposes here in the blog post. `mockFetch` simulates an asyncronous operation with a three-second `setTimeout()`. </p>  
 
 <p>I hope this has demonstrated the value of using custom hooks, which is equal to but unique from the value of using util functions. Next time we will explore a few examples of custom hooks for managing state-like values in the url and local storage, hooks that expose a `[value, setValue]` tuple which will be familiar to anyone who has used the `useState` hook.</p>  
