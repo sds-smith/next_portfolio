@@ -1,5 +1,4 @@
 
-import CoffeeExplorer from './media/coffee-explorer.png'
 import Boss from './media/boss.png';
 import DiscoverBreweries from './media/discover-breweries.png'
 import AssembleTheJams from './media/atj.png';
