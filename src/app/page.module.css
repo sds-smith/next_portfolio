@@ -183,3 +183,9 @@
     grid-template-columns: repeat(2, 50%);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .card_link {
+    color: white;
+  }
+}
