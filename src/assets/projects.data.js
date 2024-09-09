@@ -42,6 +42,6 @@ export const projects = [
         live_link : '',
         repo_link: 'https://github.com/sds-smith/assemble_the_jams_3/tree/main',
         readme_link : 'https://github.com/sds-smith/assemble_the_jams_3/blob/master/README.md',
-        description : 'A Spotify playlist generator. React Frontend with Node/Express API layer. Authentication and authorization via Passport-Spotify.'
+        description : 'A Spotify playlist generator. React Frontend with GraphQL API on Node/Express server. Authentication and authorization via Passport-Spotify.'
     },
 ]
