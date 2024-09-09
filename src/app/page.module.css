@@ -86,6 +86,11 @@
 
 .card_link {
   color: black;
+  text-decoration: none;
+}
+
+.card_link:hover .card_pointer {
+  font-style: italic;
 }
 
 .center {
