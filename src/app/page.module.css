@@ -91,6 +91,7 @@
 
 .card_link:hover .card_pointer {
   font-style: italic;
+  text-decoration: underline;
 }
 
 .center {
