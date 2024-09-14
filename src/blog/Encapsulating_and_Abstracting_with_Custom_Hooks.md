@@ -1,12 +1,12 @@
 ---
-title: "Encapsulating and Abstracting with Custom React Hooks"
-description: "The util functions of React"
+title: "Abstraction and Encapsulation with Custom React Hooks"
+description: "The utility functions of React"
 date: "August 28, 2024"
 ---
 
-# Encapsulating and Abstracting with Custom React Hooks  
+# Abstraction and Encapsulation with Custom React Hooks  
 # 
-<p>I once worked on a project where another (more Senior) developer thought we should not introduce custom hooks because we had chosen to use utility functions for organizing our code. They were of the explicit opinion that util functions and custom hooks were an either/ or proposition.</p>  
+<p>I once worked on a project where another developer thought we should not introduce custom hooks because we had chosen to use utility functions for organizing our code. They were of the explicit opinion that util functions and custom hooks were an either/ or proposition.</p>  
 
 <p>I have a tremendous respect for this person, and learned a lot from them, but on this particular point, I could not disagree more.</p>  
 
