@@ -99,7 +99,7 @@ export function useLocalStorage(key) {
 }
 ```
 <p></p>  
-<p>It's may not be a lot of code, but what we've done here is not only abstracting it for re-use (thus staying DRY), but also helping to provide a standardized developer experience.</p>  
+<p>It may not be a lot of code, but what we've done here is not only abstracting it for re-use (thus staying DRY), but also helping to provide a standardized developer experience with a common hook pattern.</p>  
 <p></p>  
-<p>Try it out ***[here on codesandbox](https://codesandbox.io/p/sandbox/uselocalstorage-l6tzrl)***. When you first navigate to the example, you will see there is nothing set in local storage (the h4 at the bottom should display "Concept stored in localStorage: ". Make a selection. Now you can close the browser window, reopen it and see your selection has persisted from the last session.</p>  
+<p>Try it out ***[here on codesandbox](https://codesandbox.io/p/sandbox/uselocalstorage-l6tzrl)***. When you first navigate to the example, you will see there is nothing set in local storage (the h4 at the bottom should display "Concept stored in localStorage: ". Make a selection to see the update in the UI. Now you can close the browser window, reopen it and see your selection has persisted from the last session.</p>  
 <p></p>  
