@@ -5,7 +5,6 @@ date: "September 4, 2024"
 ---
 
 # Hooking into Search Params
-
 #
 
 <p></p>  
@@ -17,7 +16,6 @@ date: "September 4, 2024"
 <p></p>
 
 ### Storing Data in Search Params
-
 #
 
 <p></p>  
