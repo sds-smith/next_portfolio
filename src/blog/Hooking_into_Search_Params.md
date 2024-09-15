@@ -5,7 +5,6 @@ date: "September 4, 2024"
 ---
 
 # Hooking into Search Params
-#
 
 <p></p>  
 <p>We sometimes find situations where it may be necessary to share data across components or even across browser sessions by storing it above/ outside the context of React. </p>  
@@ -16,7 +15,6 @@ date: "September 4, 2024"
 <p></p>
 
 ### Storing Data in Search Params
-#
 
 <p></p>  
 <p>`react-router-dom` gives us the ability to set and get query string params from the url with the `useSearchParams` hook. This can be useful in a single-page React application where we are using `react-router-dom` for frontend routing with multiple routes. Imagine we have a handful or more routes, and at each route we have a component tree with a Context Provider at the top. Imagine each Context provider is unique and specific to one page, so that one page does not have access to another page's Context. Routing might look something like this:</p>  
