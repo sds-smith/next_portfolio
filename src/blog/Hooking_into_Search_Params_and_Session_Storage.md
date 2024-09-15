@@ -1,6 +1,6 @@
 ---
-title: "Hooking into Search Params and Local Storage"
-description: "Lifting state way up"
+title: "Hooking into Search Params"
+description: "A custom hook for a standardized developer experience"
 date: "September 4, 2024"
 ---
 
