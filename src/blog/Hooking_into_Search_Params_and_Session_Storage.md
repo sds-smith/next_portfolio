@@ -4,12 +4,12 @@ description: "A custom hook for a standardized developer experience"
 date: "September 4, 2024"
 ---
 
-# Hooking into Search Params and Local Storage
+# Hooking into Search Params
 # 
 <p></p>  
 <p>We sometimes find situations where it may be necessary to share data across components or even across browser sessions by storing it above/ outside the context of React. </p>  
 <p></p>  
-<p>There are, of course, conventions for this: For sharing data across components outside normal React context, we have url search params, and for persisting data across browser sessions we have local storage.</p>  
+<p>There are, of course, conventions for this: For sharing data across components outside normal React context, we can url search params, and for persisting data across browser sessions we can use local storage.</p>  
 <p></p>  
 <p>This post will explore storing data in search params; at the end we will move this logic into a custom hook for a standardized developer experience.</p>  
 <p></p>  
