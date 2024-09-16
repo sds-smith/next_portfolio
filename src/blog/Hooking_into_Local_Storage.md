@@ -7,11 +7,11 @@ date: "September 5, 2024"
 # Hooking into Local Storage
 # 
 <p></p>  
-<p>We sometimes find situations where it may be necessary to share data across components or even across browser sessions by storing it above/ outside the context of React. </p>  
+<p>We sometimes find situations where it may be necessary to share data across components or even across browser sessions by storing it above/ outside the context of React, without leaning on an external State Management library. </p>  
 <p></p>  
 <p>There are, of course, conventions for this: For sharing data across components outside normal React context, we can use url search params, and for persisting data across browser sessions we can use local storage.</p>  
 <p></p>  
-<p>In ***[Hooking into Search Params](/blog/Hooking_into_Search_Params)***, we explored storing data in the url, creating a custom hook for a standardized developer experience. This post builds on that, so it's recommended that you start there.</p>  
+<p>In ***[Hooking into Search Params](/blog/Hooking_into_Search_Params)***, we explored storing data in the url, and created a custom hook to foster a standardized developer experience. This post builds on that, so it's recommended that you start there.</p>  
 <p>Otherwise, let's talk about local storage and develop a `useLocalStorage` hook!</p>  
 <p></p>  
 

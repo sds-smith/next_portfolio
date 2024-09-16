@@ -7,7 +7,7 @@ date: "September 4, 2024"
 # Hooking into Search Params
 
 <p></p>  
-<p>We sometimes find situations where it may be necessary to share data across components or even across browser sessions by storing it above/ outside the context of React. </p>  
+<p>We sometimes find situations where it may be necessary to share data across components or even across browser sessions by storing it above/ outside the context of React, without leaning on an external State Management library. </p>  
 <p></p>  
 <p>There are, of course, conventions for this: For sharing data across components outside normal React context, we can use url query string params, and for persisting data across browser sessions we can use local storage.</p>  
 <p></p>  
