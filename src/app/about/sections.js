@@ -1,6 +1,7 @@
 
 const copy1 = [
     "I like to solve tough problems. I want to work on challenging projects that make a difference for others, surrounded by people smarter than me who will challenge me. I love to build things that work, complex things designed with simplicity and elegance.",
+    "I have a deep history of first listening to understand needs, challenges, and perspectives, then formulating a response to meet those needs, overcome the challenges and honor perspectives. Software is a foremost about people - the people who use it and the people who develop and maintain it. As a Software Engineer, I put people first, crafting solutions that satisfy their needs with technologies that fit the solution.",
     "I believe it's our job as developers to produce real and measurable results for business owners, while also leaving a codebase for fellow and future developers that is clean, maintainable, and extensible. There is nothing more important to the health of a codebase than clean code/ clean architecture, but it means nothing if it doesn't produce real value for the customer right now.",
     "I am guided by a lifelong curiosity and tireless desire to be better today than yesterday, better tomorrow than today."
 ];
@@ -16,7 +17,7 @@ const copy2 = [
 const copy3 = [
   "Software development is Act II of my career journey.", 
   "Act I was a dynamic and fulfilling career in the Food and Hospitality industry. Serving in leadership roles of progressively increasing scopes of influence and responsibility, I spent the back half of my tenure overseeing an organization of six locations, 26 managers, and more than 300 front-line team members. This was a people role in a people business. ",
-  "Software, too, is a people business. Software is for people -- the people who use it, and the people who develop and maintain it. I believe the skills and qualities of character that make a successful leader in the restaurant world are universally transferrable; skills like partnering, mentoring, and listening; and qualities like humility, vision, and empathy."
+  "Software, too, is a people business. I believe the skills and qualities of character that make a successful leader in the restaurant world are universally transferrable; skills like partnering, mentoring, and listening; qualities like humility, vision, and empathy."
 ]
 
 export const sections = [
