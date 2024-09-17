@@ -8,7 +8,7 @@ const copy1 = [
 ];
 
 const copy2 = [
-    ["For the past two years I have worked as part of a distributed team for a small Federal contractor. In that time I've had the opportunity to work in an Agile project environment and on three distinct projects.",
+    ["I currently work as part of a distributed team for a small Federal contractor. In my role, I've had the opportunity to work in an Agile project environment and on three distinct projects.",
     "Through code review and pair programming, I've had the opportunity to help fellow developers on their journey to become better developers while also learning from them along my own journey. I've had the opportunity to make technical and architectural decisions, prepare technical documentation, and establish and maintain a CI/CD pipeline including production, stage, and test environments.",
     "In my current role, I am creating from scratch a proof-of-concept SPFx app with React frontend intended to replace a legacy application which was written in vanilla JavaScript with jQuery."].join(' '),
     ["Three years ago, I ventured into the gig economy as a freelance developer. The hallmark of this effort was the delivery of an MVP for an application which is currently hosted on the public internet as a subscription-based productivity app.",
