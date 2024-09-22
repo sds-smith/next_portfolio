@@ -5,7 +5,8 @@ date: "September 11, 2024"
 ---
 
 # How do you Handle Ambiguity?
-# 
+#  
+
 <p>It’s a fair question, and a rather common one in interviews. Some may say it can be a red flag of a toxic culture - maybe, but the truth is, ambiguity exists in every organization and on every team. It exists all around us, not necessarily deliberate or willful, nor as some monolithic spectre, the diametric opposite of clarity and detail. Ambiguity doesn’t require a complete absence of these things; it more often exists in degrees as merely a lack of clarity or detail, interwoven among them.</p> 
   
 <p>The human brain has a way of automatically dealing with ambiguity even without our awareness. It does this by filling in the blanks with assumptions and inferences, often based on contextual clues. This can be beneficial at times, but not  necessarily in a project management or product development setting.</p>
