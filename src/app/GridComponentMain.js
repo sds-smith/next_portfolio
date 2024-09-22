@@ -11,14 +11,16 @@ const align = {
     home: 'center',
     about: 'flex-start',
     portfolio: 'flex-start',
-    blog: 'flex-start'
+    blog: 'flex-start',
+    slug: 'flex-start',
 }
 
 const justify = {
   home: 'space-between',
   about: 'flex-start',
   portfolio: 'flex-start',
-  blog: 'flex-start'
+  blog: 'flex-start',
+  slug: 'flex-start',
 }
 
 export default function GridComponentMain({page, children}) {

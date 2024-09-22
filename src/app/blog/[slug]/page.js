@@ -4,6 +4,8 @@ import Container from '@mui/material/Container';
 import fs from 'fs';
 import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
+import GridComponentMain from '@/app/GridComponentMain';
+import Signature from '@/app/Signature';
 import getPostMetadata from '@/utils/getPostMetadata';
 
 function getPostContent(slug) {
@@ -30,12 +32,11 @@ export default function BlogPage({ params }) {
     const post = getPostContent(slug);
 
     return (
-      <Grid container component="main" p={{xs: '3rem 0', md: '6rem 0'}} sx={{minHeight: '100vh'}} >
-          <Grid item xs={12}>
-            <Container component="article">
-                <Markdown>{post.content}</Markdown>
-            </Container>
-          </Grid>
-      </Grid>
+    <GridComponentMain page="slug" >
+        <Signature page="slug" />
+        <Grid item component="article" xs={12} md={7} p={{xs: '0 3rem', md: '4rem 6rem'}}>
+            <Markdown>{post.content}</Markdown>
+        </Grid>
+      </GridComponentMain>
     )
 }

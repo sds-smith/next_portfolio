@@ -6,6 +6,7 @@ const md = {
     about: [2, 10],
     portfolio: [2, 10],
     blog: [2, 10],
+    slug: [2, 10]
 }
 
 export default function Signature({page}) {
