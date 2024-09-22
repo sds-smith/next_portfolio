@@ -24,35 +24,35 @@ date: "August 21, 2024"
 <p></p>  
 
 ```
-    //App.js
-    import { useState, useEffect } from "react";
-    import getSharePointData from "./utils/getSharePointData";
+  //App.js
+  import { useState, useEffect } from "react";
+  import getSharePointData from "./utils/getSharePointData";
 
-    export default function App() {
-        const [data, setData] = useState(null);
-        const [loading, setLoading] = useState(false);
-        const [error, setError] = useState(null);
+  export default function App() {
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-        const url = 'some_url'
+    const url = 'some_url'
 
-        useEffect(() => {
-          if (!loading && !error && !data) {
-            setLoading(true);
-            getSharePointData(url)
-              .then(setData)
-              .catch(setError)
-              .finally(() => setLoading(false));
-          }
-        }, [url]);
+    useEffect(() => {
+      if (!loading && !error && !data) {
+        setLoading(true);
+        getSharePointData(url)
+          .then(setData)
+          .catch(setError)
+          .finally(() => setLoading(false));
+      }
+    }, [url]);
 
-        return (
-          <>
-            {loading && <div>Loading</div>}
-            {error && <div>Error</div>}
-            {data && <div>{data.response}</div>}
-          </>
-        );
-    }
+    return (
+      <>
+        {loading && <div>Loading</div>}
+        {error && <div>Error</div>}
+        {data && <div>{data.response}</div>}
+      </>
+    );
+  }
 ```
 
 <p></p>  
@@ -64,27 +64,27 @@ date: "August 21, 2024"
 <p></p>  
 
 ```
-    //useSharePoint.js
-    import { useState, useEffect } from "react";
-    import getSharePointData from "../utils/getSharePointData";
+  //useSharePoint.js
+  import { useState, useEffect } from "react";
+  import getSharePointData from "../utils/getSharePointData";
 
-    export function useSharePoint(url) {
-        const [data, setData] = useState(null);
-        const [loading, setLoading] = useState(false);
-        const [error, setError] = useState(null);
+  export function useSharePoint(url) {
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-        useEffect(() => {
-          if (!loading && !error && !data) {
-            setLoading(true);
-            getSharePointData(url)
-              .then(setData)
-              .catch(setError)
-              .finally(() => setLoading(false));
-          }
-        }, [url]);
+    useEffect(() => {
+      if (!loading && !error && !data) {
+        setLoading(true);
+        getSharePointData(url)
+          .then(setData)
+          .catch(setError)
+          .finally(() => setLoading(false));
+      }
+    }, [url]);
 
-        return [ loading, error, data ];
-    }
+    return [ loading, error, data ];
+  }
 ```
 
 <p></p>  
@@ -94,20 +94,20 @@ date: "August 21, 2024"
 <p></p>  
 
 ```
-    //App.js
-    import { useSharePoint } from "./hooks/useSharePoint";
+  //App.js
+  import { useSharePoint } from "./hooks/useSharePoint";
 
-    export default function App() {
-        const [ loading, error, data ] = useSharePoint('some_url');
+  export default function App() {
+    const [ loading, error, data ] = useSharePoint('some_url');
 
-        return (
-          <>
-            {loading && <div>Loading</div>}
-            {error && <div>Error</div>}
-            {data && <div>{data.response}</div>}
-          </>
-        );
-    }
+    return (
+      <>
+        {loading && <div>Loading</div>}
+        {error && <div>Error</div>}
+        {data && <div>{data.response}</div>}
+      </>
+    );
+  }
 ```  
 
 <p></p>  
@@ -121,30 +121,30 @@ date: "August 21, 2024"
 <p></p>  
 
 ```
-    //useLazySharePoint.js
-    import { useState } from "react";
-    import getSharePointData from "../utils/getSharePointData";
+  //useLazySharePoint.js
+  import { useState } from "react";
+  import getSharePointData from "../utils/getSharePointData";
 
-    export function useLazySharePoint(url) {
-        const [data, setData] = useState(null);
-        const [loading, setLoading] = useState(false);
-        const [error, setError] = useState(null);
+  export function useLazySharePoint(url) {
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-        const get = () => {
-          if (!loading && !error && !data) {
-            setLoading(true);
-            getSharePointData(url)
-              .then(setData)
-              .catch(setError)
-              .finally(() => setLoading(false));
-          }
-        };
+    const get = () => {
+      if (!loading && !error && !data) {
+        setLoading(true);
+        getSharePointData(url)
+          .then(setData)
+          .catch(setError)
+          .finally(() => setLoading(false));
+      }
+    };
 
-        return { 
-            get,
-            results: [ loading, error, data ]
-        };
-    }
+    return { 
+        get,
+        results: [ loading, error, data ]
+    };
+  }
 ```
 
 <p></p>  
@@ -156,33 +156,37 @@ date: "August 21, 2024"
 <p></p>  
 
 ```
-    //App.js
-    import { useEffect } from "react";
-    import { useSharePoint } from "./hooks/useSharePoint";
-    import { useLazySharePoint } from "./hooks/useLazySharePoint";
+  //App.js
+  import { useEffect } from "react";
+  import { useSharePoint } from "./hooks/useSharePoint";
+  import { useLazySharePoint } from "./hooks/useLazySharePoint";
 
-    export default function App() {
-        const [ loading1, error1, data1 ] = useSharePoint('some_url');
-        const { get, results: [ loading2, error2, data2 ] } = useLazySharePoint('some_other_url');
+  export default function App() {
+    const [ loading1, error1, data1 ] = useSharePoint('some_url');
 
-        useEffect(() => {
-            if (data1) get();
-        }, [data1])
+    const { 
+      get, 
+      results: [ loading2, error2, data2 ] 
+    } = useLazySharePoint('some_other_url');
 
-        useEffect(() => {
-            if (data2) {
-                //do something with data2
-            }
-        }, [data2])
+    useEffect(() => {
+        if (data1) get();
+    }, [data1])
 
-        return (
-          <>
-            {loading1 && <div>Loading</div>}
-            {error1 && <div>Error</div>}
-            {data1 && <div>{data1.response}</div>}
-          </>
-        );
-    }
+    useEffect(() => {
+        if (data2) {
+            //do something with data2
+        }
+    }, [data2])
+
+    return (
+      <>
+        {loading1 && <div>Loading</div>}
+        {error1 && <div>Error</div>}
+        {data1 && <div>{data1.response}</div>}
+      </>
+    );
+  }
 ```  
 
 <p></p>  

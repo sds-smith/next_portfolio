@@ -23,26 +23,26 @@ date: "August 28, 2024"
 ```
 //App.jsx
 ...
-    <Route
-        path='/home'
-        element={<Home/>}
-    />
-    <Route
-        path='/all_people'
-        element={
-          <AllPeopleProvider>
-            <AllPeople/>
-          </AllPeopleProvider>
-        }
-    />
-    <Route
-        path='/person_detail'
-        element={
-          <PersonDetailProvider>
-            <PersonDetail/>
-          </PersonDetailProvider>
-        }
-    />
+  <Route
+    path='/home'
+    element={<Home/>}
+  />
+  <Route
+    path='/all_people'
+    element={
+      <AllPeopleProvider>
+        <AllPeople/>
+      </AllPeopleProvider>
+    }
+  />
+  <Route
+    path='/person_detail'
+    element={
+      <PersonDetailProvider>
+        <PersonDetail/>
+      </PersonDetailProvider>
+    }
+  />
 ...
 ```
 
@@ -57,8 +57,8 @@ date: "August 28, 2024"
 ```
 //PersonDetailProvider.jsx
 ...
-    const [ searchParams ] = useSearchParams();
-    const id = searchParams.get('id');
+  const [ searchParams ] = useSearchParams();
+  const id = searchParams.get('id');
 ...
 ```
 
@@ -71,36 +71,44 @@ date: "August 28, 2024"
 import { useSearchParams } from "react-router-dom";
 
 export default function AllPeopleSearch() {
-    const [ searchParams, setSearchParams ] = useSearchParams();
-    const firstName = searchParams.get('first_name');
-    const lastName = searchParams.get('last_name');
+  const [ searchParams, setSearchParams ] = useSearchParams();
+  const firstName = searchParams.get('first_name');
+  const lastName = searchParams.get('last_name');
 
-    const onChangeFirstName = (e) => {
-      setSearchParams(
-        (prev) => {
-          prev.set('first_name', e.target.value);
-          return prev;
-        },
-        { replace: true }
-      );
-    }
+  const onChangeFirstName = (e) => {
+    setSearchParams(
+      (prev) => {
+        prev.set('first_name', e.target.value);
+        return prev;
+      },
+      { replace: true }
+    );
+  }
 
-    const onChangeLastName = (e) => {
-      setSearchParams(
-        (prev) => {
-          prev.set('last_name', e.target.value);
-          return prev;
-        },
-        { replace: true }
-      );
-    }
+  const onChangeLastName = (e) => {
+    setSearchParams(
+      (prev) => {
+        prev.set('last_name', e.target.value);
+        return prev;
+      },
+      { replace: true }
+    );
+  }
 
-    return (
-        <>
-            <input value={firstName} onChange={onChangeFirstName} placeholder="Search by First Name" />
-            <input value={lastName} onChange={onChangeLastName} placeholder="Search by Last Name" />
-        </>
-    )
+  return (
+    <>
+      <input 
+        value={firstName} 
+        onChange={onChangeFirstName} 
+        laceholder="Search by First Name" 
+      />
+      <input 
+        value={lastName} 
+        onChange={onChangeLastName} 
+        placeholder="Search by Last Name" 
+      />
+    </>
+  )
 }
 ```
 
@@ -119,18 +127,28 @@ export default function AllPeopleSearch() {
 import { useQueryStringParams } from "../hooks/useQueryStringParams";
 
 export default function AllPeopleSearch() {
-    const [firstName, setFirstName] = useQueryStringParams("first_name");
-    const [lastName, setLastName] = useQueryStringParams("last_name");
+  const [firstName, setFirstName] = 
+    useQueryStringParams("first_name");
+  const [lastName, setLastName] = 
+    useQueryStringParams("last_name");
 
-    const handleChangeFirst = (e) => setName(e.target.value);
-    const handleChangeLast = (e) => setAge(e.target.value);
+  const handleChangeFirst = (e) => setName(e.target.value);
+  const handleChangeLast = (e) => setAge(e.target.value);
 
-    return (
-        <>
-            <input value={firstName} onChange={handleChangeFirst} placeholder="Search by First Name" />
-            <input value={lastName} onChange={handleChangeLast} placeholder="Search by Last Name" />
-        </>
-    )
+  return (
+    <>
+      <input 
+        value={firstName} 
+        onChange={handleChangeFirst} 
+        placeholder="Search by First Name" 
+      />
+      <input 
+        value={lastName} 
+        onChange={handleChangeLast} 
+        placeholder="Search by Last Name" 
+      />
+    </>
+  )
 }
 ```
 
