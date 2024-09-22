@@ -1,7 +1,7 @@
 ---
 title: "Handling Ambiguity"
 description: "no one-size-fits-all approach."
-date: "Septwmber 11, 2024"
+date: "September 11, 2024"
 ---
 
 # How do you Handle Ambiguity?
