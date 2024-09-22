@@ -1,7 +1,7 @@
 ---
 title: "Hooking into Local Storage"
 description: "A custom hook for a standardized developer experience"
-date: "September 5, 2024"
+date: "September 4, 2024"
 ---
 
 # Hooking into Local Storage

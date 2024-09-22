@@ -1,7 +1,7 @@
 ---
 title: "Hooking into Search Params"
 description: "A custom hook for a standardized developer experience"
-date: "September 4, 2024"
+date: "August 28, 2024"
 ---
 
 # Hooking into Search Params

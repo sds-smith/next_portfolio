@@ -1,7 +1,7 @@
 ---
 title: "Starting in the Middle"
 description: "It's the first blog post, but it's not the beginning."
-date: "August 21, 2024"
+date: "August 14, 2024"
 ---
 
 # Starting in the Middle

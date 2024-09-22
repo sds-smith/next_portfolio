@@ -1,7 +1,7 @@
 ---
 title: "Abstraction and Encapsulation with Custom React Hooks"
 description: "The utility functions of React"
-date: "August 28, 2024"
+date: "August 21, 2024"
 ---
 
 # Abstraction and Encapsulation with Custom React Hooks  
