@@ -1,5 +1,5 @@
 ---
-title: "Handling Ambiguity"
+title: "Handling Ambiguity in the Software Development Life Cycle"
 description: "Not a one-size-fits-all approach."
 date: "September 11, 2024"
 ---
