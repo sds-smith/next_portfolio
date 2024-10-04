@@ -2,7 +2,7 @@
 import Boss from './media/boss.png';
 import DiscoverBreweries from './media/discover-breweries.png'
 import AssembleTheJams from './media/atj.png';
-import Counterpoint from './media/counterpoint.png'
+import Counterpoint from './media/counterpoint.jpeg'
 
 export const projects = [
     {   
