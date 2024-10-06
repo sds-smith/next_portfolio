@@ -17,7 +17,7 @@ export const projects = [
         live_link : '',
         repo_link : 'https://github.com/sds-smith/restaurant_menu',
         readme_link : 'https://github.com/sds-smith/restaurant_menu/blob/main/README.md',
-        description : 'A decoupled eCommerce system consisting of: An ordering app with React frontend, and a menu data API/ CMS tool running on a Ruby on Rails server.'
+        description : 'A loosely-coupled eCommerce software system with: Frontend: React, Backend: Node/Express,  API/ data management layer: Ruby on Rails.'
     },      
     {   
         id: 'atj-card',
