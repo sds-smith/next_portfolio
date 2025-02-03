@@ -48,14 +48,14 @@ export const projects = [
     {   
         id: '1on1boss-card',
         name: '1on1Boss',
-        action: 'learn more',
+        // action: 'learn more',
         heading_title : 'Kanban-style Discussion Board',
         heading_subtitle : 'Full-stack MERN App',
         background_image : Boss,
-        video_link : '',
-        live_link : 'http://app.1on1boss.com/',
-        repo_link : 'https://www.1on1boss.com/the-team',
-        readme_link : 'https://www.1on1boss.com',
+        // video_link : '',
+        // live_link : '',
+        // repo_link : '',
+        // readme_link : 'https://www.1on1boss.com',
         description : 'An MVP for a kanban-style discussion management board. Built on the MERN tech stack, runs in Docker container.'
     }, 
 ]

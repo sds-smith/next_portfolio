@@ -26,7 +26,7 @@ export default function Portfolio() {
               <Grid item xs={12} md={9} >
                 <Typography className={styles.card_h2} variant='h5'>{p.name}</Typography>
                 <Typography className={styles.card_p}>{p.description}</Typography>
-                <Typography className={styles.card_pointer} href={p.repo_link} target='_blank' rel='no-referrer'>{p.action}<span>-&gt;</span></Typography>
+                { p.action && <Typography className={styles.card_pointer} href={p.repo_link} target='_blank' rel='no-referrer'>{p.action}<span>-&gt;</span></Typography> }
               </Grid>
             </Grid >
           </a>
