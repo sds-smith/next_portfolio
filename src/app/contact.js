@@ -54,17 +54,6 @@ export default function Contact() {
             <p>sds.smith24@gmail.com</p>
           </a>
 
-          <a
-            href="tel:12156305599"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Phone <span>-&gt;</span>
-            </h2>
-            <p>215.630.5599</p>
-          </a>
         </div>
     )
 }
