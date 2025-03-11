@@ -3,12 +3,27 @@ import Boss from './media/boss.png';
 import DiscoverBreweries from './media/discover-breweries.png'
 import AssembleTheJams from './media/atj.png';
 import Counterpoint from './media/counterpoint.jpeg'
+import WineRack from './media/WineRack.png'
 
 export const projects = [
     {   
+        id: 'wine-rack-card',
+        name: 'The Wine Rack',
+        action: 'view github repository',
+        heading_title : 'Inventory Tracking App',
+        heading_subtitle : 'NextJS Application',
+        background_image : WineRack,
+        image_orientation: 'landscape',
+        video_link : '',
+        live_link : '',
+        repo_link : 'https://github.com/sds-smith/wine-rack',
+        readme_link : '',
+        description : 'NextJS-15, TypeScript, Next-Auth, MongoDB -- SSR-first Component architecture, App router, Server Actions'
+    }, 
+    {   
         id: 'counterpoint-kitchen-card',
         name: 'Counterpoint Craft Kitchen',
-        action: 'view on github',
+        action: 'view github repository',
         heading_title : 'Ecommerce System',
         heading_subtitle : 'Full-stack MERN App and Rails CMS/API',
         background_image : Counterpoint,
@@ -22,20 +37,20 @@ export const projects = [
     {   
         id: 'atj-card',
         name : 'Assemble the Jams',
-        action: 'view on github',
-        heading_title : 'Assemble the Jams',
+        action: 'view github repository',
+        heading_title : 'Spotify playlist generator',
         heading_subtitle : 'React Progressive Web App',
         background_image : AssembleTheJams,
         video_link : 'https://youtu.be/MWqiaZKtZzg',
         live_link : '',
         repo_link: 'https://github.com/sds-smith/assemble_the_jams_3/tree/main',
         readme_link : 'https://github.com/sds-smith/assemble_the_jams_3/blob/master/README.md',
-        description : 'A Spotify playlist generator. React Frontend with GraphQL API on Node/Express server. Authentication and authorization via Passport-Spotify.'
+        description : 'React Frontend with GraphQL API on Node/Express server. Leverages Spotify REST API with Premium account Authentication and authorization via Passport-Spotify.'
     },
     {   
         id: 'discover-breweries-card',
         name: 'Discover Breweries',
-        action: 'view on github',
+        action: 'view github repository',
         heading_title : 'Brewery Locator',
         heading_subtitle : 'React static frontend with AWS Lambda',
         background_image : DiscoverBreweries,
